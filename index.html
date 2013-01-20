@@ -17,61 +17,94 @@
       <a href="#" class="nav-link">Donate</a>   
     </div>
 
+    <ul class="hero slider">
+        <li>
+            <img src="https://s3.amazonaws.com/greenivism/hero2.jpg"> <!-- random image -->
+        </li>
+        <li>
+            <img src="https://s3.amazonaws.com/greenivism/hero1.jpg"> <!-- random image -->
+        </li>
+    </ul>
 
+
+<div style="min-width:750px;">
     
 
-    <ul class="hero slider">
-  <li>
-    <img src="https://s3.amazonaws.com/greenivism/hero2.jpg"> <!-- random image -->
-  </li>
-  <li>
-    <img src="https://s3.amazonaws.com/greenivism/hero1.jpg"> <!-- random image -->
-  </li>
-</ul>
-
-
-
-
-    <div class="mission-statement">
-      <h1><span class="green">Our Mission:</span> To promote and implement clean and sustainable energy solutions to preserve our planet and protect our future.</h1>
+<div class="rightcontainer">
+    <div class="rightbox">
+        <p class="rightboxheading">Help us</p>
+        <a href="#" class="greenbutton donatebutton">Donate</a>
     </div>
-
-    <h2 style="text-align:center;margin:5% 0;">Join Us!</h2>
+    <br/>
+    <div class="rightbox">
+    <p class="rightboxheading">Socialize</p>
+    
+    <a href="https://www.facebook.com/greenivism" target="_blank"><img src="https://s3.amazonaws.com/greenivism/img/facebook.png"></a>
+    <a href="https://twitter.com/greenivism" target="_blank"><img src="https://s3.amazonaws.com/greenivism/img/twitter.png"></a>
+    <a href="http://greenivism.tumblr.com/" target="_blank"><img src="https://s3.amazonaws.com/greenivism/img/tumblr.png"></a>
+    <a href="http://www.flickr.com/photos/greenivism/" target="_blank"><img src="https://s3.amazonaws.com/greenivism/img/flickr.png"></a>
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="http://greenivism.us6.list-manage2.com/subscribe/post?u=5b3ba72b39763f9abdd70d31d&amp;id=5b520216ce" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div class="mc-field-group">
+	    <input style="padding:8px 10px;width:236px;margin:0 0 10px 0;" type="email" value="Enter your E-mail address" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="clearDefault(this)" onblur="replaceInputMsg(this, 'email')">
+    </div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	<div class="clear"><input class="greenbutton joinemail" type="submit" value="Join the email list" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+    
+    </div>
+    </div>
+    
+    <div class="leftbox" style="float:left;width:64%;margin-left:4%;height:400px;border:1px solid #aaa;background-color:#fff; min-width:500px;">
+        
+        
+    </div>
+    
+    
+   </div> 
+    
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-    var $slider = $('.slider'); // class or id of carousel slider
-var $slide = 'li'; // could also use 'img' if you're not using a ul
-var $transition_time = 1000; // 1 second
-var $time_between_slides = 4000; // 4 seconds
+        var $slider = $('.slider'); // class or id of carousel slider
+        var $slide = 'li'; // could also use 'img' if you're not using a ul
+        var $transition_time = 1000; // 1 second
+        var $time_between_slides = 4000; // 4 seconds
+        $('.slider').css('height',$(window).width()/3.9 + 'px');
 
-$('.slider').css('height',$(window).width()/3.9 + 'px');
+        function slides(){
+            return $slider.find($slide);
+        }
 
-function slides(){
-  return $slider.find($slide);
-}
+        slides().fadeOut();
+        slides().first().addClass('active');
+        slides().first().fadeIn($transition_time); 
+        $interval = setInterval(
+        function(){
+            var $i = $slider.find($slide + '.active').index();    
+            slides().eq($i).removeClass('active');
+            slides().eq($i).fadeOut($transition_time);
+            if (slides().length == $i + 1) $i = -1;
+            slides().eq($i + 1).fadeIn($transition_time);
+            slides().eq($i + 1).addClass('active');
+            }
+        , $transition_time +  $time_between_slides 
+        );
+        
+        function clearDefault(el) {
+            if (el.defaultValue==el.value) el.value = "";
+        }
 
-slides().fadeOut();
-
-// set active classes
-slides().first().addClass('active');
-slides().first().fadeIn($transition_time);
-
-// auto scroll 
-$interval = setInterval(
-    function(){
-      var $i = $slider.find($slide + '.active').index();
-    
-      slides().eq($i).removeClass('active');
-      slides().eq($i).fadeOut($transition_time);
-    
-      if (slides().length == $i + 1) $i = -1; // loop to start
-    
-      slides().eq($i + 1).fadeIn($transition_time);
-      slides().eq($i + 1).addClass('active');
-    }
-    , $transition_time +  $time_between_slides 
-);
+        function replaceInputMsg(el, type) {
+            if (el.value == "" && type == 'email') el.value = "Enter your E-mail address";
+            if (el.value == "" && type == 'fname') el.value = "First name";
+            if (el.value == "" && type == 'zip') el.value = "US Zip";
+        }
     </script>
 
   </body>

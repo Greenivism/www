@@ -1,14 +1,24 @@
 body {padding:0;margin:0;font-family:helvetica,arial,sans-serif; background:url('https://s3.amazonaws.com/greenivism/lines.png');}
 a{display:inline-block;text-decoration:none;}
 .green{color:#6c0;}
-.nav{width:100%;background-color:#7d0;background: -webkit-gradient(linear, left top, left bottom, from(#8e1), to(#6c0));border-bottom:1px solid #070;}
-.nav-link{padding:16px 20px;font-size:14px;line-height:14px;font-weight:400;color:#fff;text-shadow:-1px -1px #6c0;float:right;}
-.nav-link:hover {background: -webkit-gradient(linear, left top, left bottom, from(#6c0), to(#4a0));}
-.title{font-size:22px;line-height:22px;margin:12px 20px;font-weight:700;text-shadow:-1px -1px #6c0;letter-spacing:-1px;color:#fff;font-family: helvetica,arial,sans-serif;}
+.nav{width:100%;background-color:#5c0;border-bottom:1px solid #070;}
+.nav-link{padding:16px 20px;font-size:14px;line-height:14px;font-weight:400;color:#fff;text-shadow:-1px -1px #4a0;float:right;}
+.nav-link:hover {background-color:#6d0;}
+.title{font-size:22px;line-height:22px;margin:12px 20px;font-weight:700;text-shadow:-1px -1px #4a0;letter-spacing:-1px;color:#fff;font-family: helvetica,arial,sans-serif;}
 .hero{width:100%;}
 .hero img {width:100%;border-bottom:1px solid #aaa;}
 .mission-statement{width:90%;margin:1% auto;background-color:#fff;border-top:1px solid #aaa;border-bottom:1px solid #aaa;padding:2% 5%;}
 .mission-statement h1 {margin:0;letter-spacing:-1px;color:#222;}
+
+.greenbutton{width:260px;background-color:#5c0;text-align:center;padding:10px 0;color:white;text-shadow:-1px -1px #4a0;border:1px solid #070;border-radius:10px;box-shadow:inset 0px 1px 1px #fff;}
+.greenbutton:hover{background-color:#6d0;}
+.greenbutton:active{background-color:#4b0;box-shadow:inset 0px -1px 1px #090;}
+.donatebutton{width:260px;font-weight:bold;font-size:22px;line-height:22px;letter-spacing:-1px;}
+.joinemail{font-weight:400;font-size:16px;line-height:16px;}
+
+.rightcontainer{width:24%;float:right;margin:0 4% 50px 0;}
+.rightbox{background-color:#fff;width:272px;padding:30px 10px 30px 23px;margin:0 auto;border:1px solid #aaa;}
+.rightboxheading{text-align:center;color:#222;margin:0px 0 30px -13px;font-weight:700;font-size:30px;line-height:30px;letter-spacing:-1px;}
 
 /*
  .whatcanido {padding:0;margin-top:46px;}
@@ -29,7 +39,7 @@ li a{padding:2% 10%;color:#222;font-size:12px;}
 */
 
 .slider {
-  margin:0;
+  margin:0 0 4% 0;;
   width: 100%; /* Update to your slider width */  position: relative;
   
 }
