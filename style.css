@@ -30,3 +30,5 @@ a{display:inline-block;text-decoration:none;}
 
 .footer{width:90%;background-color:#5c0;padding:0 5%;border-top:1px solid #070;margin-top:50px;}
 .footerlink{font-size:12px;line-height:12px;color:#fff;padding:8px;}
+
+.font1{font-size:30px;letter-spacing:-1px;color:#222;}
