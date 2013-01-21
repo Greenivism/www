@@ -7,7 +7,7 @@ $('.header').append('<a href="donate.html" class="nav-link">Donate</a>');
 $('.footer').append('<a href="#" class="footerlink">2013 Greenivism Corp.</a>');
 
 $('.donatebox').append('<p class="rightboxheading">Help us</p>')
-$('.donatebox').append('<a href="" class="greenbutton donatebutton">Donate</a>')
+$('.donatebox').append('<a href="donate.html" class="greenbutton donatebutton">Donate</a>')
 
 $('.socialbox').append('<p class="rightboxheading">Socialize</p>');
 $('.socialbox').append('<a href="https://www.facebook.com/greenivism" target="_blank"><img src="https://s3.amazonaws.com/greenivism/img/facebook.png"></a>');
