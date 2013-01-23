@@ -20,7 +20,7 @@ a{display:inline-block;text-decoration:none;}
 .rightbox{background-color:#fff;width:272px;padding:30px 10px 30px 23px;margin:0 auto;border:1px solid #aaa;}
 .rightboxheading{text-align:center;color:#222;margin:0px 0 30px -13px;font-weight:700;font-size:30px;line-height:30px;letter-spacing:-1px;}
 
-.slider {margin:0 0 4% 0;position: relative;padding:0;}
+.slider {margin:47px 0 4% 0;position: relative;padding:0;}
 .slider li {display: none;position: absolute;top: 0;left: 0;}
 
 .leftbox{float:left;width:58%;margin-left:4%;border:1px solid #aaa;background-color:#fff; min-width:500px;padding:0 3% 30px 3%;}
