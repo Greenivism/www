@@ -1,7 +1,7 @@
 body {padding:0;margin:0;font-family:helvetica,arial,sans-serif; background:url('https://s3.amazonaws.com/greenivism/lines.png');}
 a{display:inline-block;text-decoration:none;}
 .green{color:#6c0;}
-.header{width:100%;background-color:#5c0;border-bottom:1px solid #070;position:fixed;top:0px;z-index:9999;}
+.header{width:100%;background-color:#5c0;border-bottom:1px solid #070;position:fixed;top:0px;z-index:9999;box-shadow:0px 1px 3px #777;}
 .header-link{padding:16px 20px;font-size:14px;line-height:14px;font-weight:400;color:#fff;text-shadow:-1px -1px #4a0;float:right;}
 .header-link:hover {background-color:#6d0;}
 .title{font-size:22px;line-height:22px;margin:12px 20px;font-weight:700;text-shadow:-1px -1px #4a0;letter-spacing:-1px;color:#fff;font-family: helvetica,arial,sans-serif;}
@@ -17,13 +17,13 @@ a{display:inline-block;text-decoration:none;}
 .joinemail{font-weight:400;font-size:16px;line-height:16px;}
 
 .rightcontainer{width:24%;float:right;margin:0 4% 0 0;}
-.rightbox{background-color:#fff;width:272px;padding:30px 10px 30px 23px;margin:0 auto;border:1px solid #aaa;}
+.rightbox{background-color:#fff;width:272px;padding:30px 10px 30px 23px;margin:0 auto;border:1px solid #aaa;box-shadow:inset 0px 0px 3px #bbb;}
 .rightboxheading{text-align:center;color:#222;margin:0px 0 30px -13px;font-weight:700;font-size:30px;line-height:30px;letter-spacing:-1px;}
 
 .slider {margin:47px 0 4% 0;position: relative;padding:0;}
 .slider li {display: none;position: absolute;top: 0;left: 0;}
 
-.leftbox{float:left;width:58%;margin-left:4%;border:1px solid #aaa;background-color:#fff; min-width:500px;padding:0 3% 30px 3%;}
+.leftbox{float:left;width:58%;margin-left:4%;border:1px solid #aaa;background-color:#fff; min-width:500px;padding:0 3% 30px 3%;box-shadow:inset 0px 0px 3px #bbb;}
 .tumblr_posts{list-style-type:none;padding:0;margin:0;color:#222;}
 .tumblr_title{color#222;font-weight:700;font-size:30px;line-height:30px;letter-spacing:-1px;}
 .tumblr_post{border-bottom:1px solid #aaa;margin:30px 0;padding:0 0 20px 0;}
@@ -34,17 +34,17 @@ a{display:inline-block;text-decoration:none;}
 .font1{font-size:30px;letter-spacing:-1px;color:#222;}
 
 
- .whatcanido {padding:0;margin:47px 0 0 0;}
- .whatcanido h1{font-size:50px;text-align:right;width:95%;display:inline-block;color:#222;}
- .whatcanido h2{font-size:50px;margin-top:100px;text-align:right;}
- .nav2container{position:fixed;left:0px;width:15%;height:100%;border-right:1px solid #aaa;}
- .nav2 p{font-size:14px;margin:5px 0 5px 5px;}
-.thingtodo{padding:20px;border-bottom:0px solid black;overflow:auto;margin-bottom:10px;margin-left:15%;background-color:#fff;border-bottom:1px solid #aaa;border-top:1px solid #aaa;}
+.whatcanido {padding:0;margin:47px 0 0 0;}
+.whatcanido h1{font-size:50px;text-align:right;width:95%;display:inline-block;color:#222;}
+.whatcanido h2{font-size:50px;margin-top:100px;text-align:right;}
+.nav2container{position:fixed;left:0px;width:15%;height:100%;border-right:1px solid #aaa;box-shadow:1px 0px 3px #bbb;}
+.nav2 p{font-size:14px;margin:5px 0 5px 5px;}
+.thingtodo{padding:20px;border-bottom:0px solid black;overflow:auto;margin-bottom:10px;margin-left:15%;background-color:#fff;border-bottom:1px solid #aaa;border-top:1px solid #aaa;box-shadow:inset 0px 0px 3px #bbb;}
 .thingtodoimg{width:20%;float:left;}
 .thingtodocontainer{width:78%;margin-left:2%; float:left;}
 .thingtodotitle{font-size:26px;font-weight:700;display:inline-block;margin:0 0 5px 0;letter-spacing:-1px;color:#222;}
 .thingtodotext{font-size:18px;letter-spacing:0px;}
 .section {position:relative;top:-100px;visibility:hidden;}
 .whatcanido ul{list-style-type: none;margin-left:0;padding:0;}
-.whatcanido li .active{background-color: #fff;width:85%;padding:5% 3% 5% 12%;border-bottom:1px solid #aaa;border-top:1px solid #aaa;}
+.whatcanido li .active{box-shadow:inset 1px 0px 3px #bbb;background-color: #fff;width:85%;padding:6% 2% 6% 13%;border-bottom:1px solid #aaa;border-top:1px solid #aaa;}
 .whatcanido li a{padding:5% 3% 5% 12%;color:#222;font-size:12px;}
