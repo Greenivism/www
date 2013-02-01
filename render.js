@@ -1,5 +1,5 @@
 $('.header').append('<a href="http://www.greenivism.org" class="title">Greenivism</a>');
-$('.header').append('<a href="http://www.greenivism.org/spreadtheword.html" class="header-link spreadlink">Spread the word</a>');
+$('.header').append('<a href="http://store.greenivism.org" class="header-link spreadlink">Store</a>');
 $('.header').append('<a href="http://www.greenivism.org/getinvolved.html" class="header-link involvedlink">Get Involved</a>');
 $('.header').append('<a href="http://blog.greenivism.org/" class="header-link bloglink">Blog</a>');
 $('.header').append('<a href="http://www.greenivism.org/greenivistmanifesto.html" class="header-link manlink">Greenivist Manifesto</a>');

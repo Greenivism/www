@@ -211,3 +211,4 @@
 {"ts":1358926523306,"patch":[[{"diffs":[[0,"0px 0px "],[-1,"1"],[1,"3"],[0,"px #090;"]],"start1":1267,"start2":1267,"length1":17,"length2":17}]],"length":3783,"saved":false}
 {"contributors":[],"silentsave":false,"ts":1359344064711,"patch":[[{"diffs":[[0,":#222;}\r"],[1,"\n.header-link .active {background-color:#4b0;}\r"],[0,"\n\r\n.gree"]],"start1":956,"start2":956,"length1":16,"length2":63}]],"length":3830,"saved":false}
 {"ts":1359344092904,"patch":[[{"diffs":[[0,"der-link"],[-1," "],[0,".active "]],"start1":969,"start2":969,"length1":17,"length2":16}]],"length":3829,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1359750424265,"patch":[[{"diffs":[[0,"0;}\r\n.title{"],[1,"float:left;"],[0,"font-size:22"]],"start1":509,"start2":509,"length1":24,"length2":35}]],"length":3840,"saved":false}
